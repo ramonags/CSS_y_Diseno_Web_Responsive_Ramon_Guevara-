@@ -1,3 +1,68 @@
-body{
-  ont-family: 'Dancing Script', cursive;
+body {
+
+
+  background-color:  #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  color: #fff;
+  background-color:#5b7989;
+  border-radius: 10px 10px  0 0 ;
+}
+
+header h1 {
+  text-shadow: 2px  2px  2px  #02010a;
+}
+header ul li {
+margin: auto;
+  display: inline-block;
+}
+#img_central{
+  width: 100%;
+  background-color: #82c3a6;
+}
+#img_secundari_1{
+  width: 50%;
+  background-color: #d5c75f;
+  text-align: center;
+}
+#img_secundari_2{
+  width: 50%;
+  background-color: #d5c75f;
+  text-align: center;
+}
+/*
+#contacto{
+  width: 25%;
+}
+#terminos{
+  width: 25%;
+}
+#redes{
+  width: 25%
+}
+#copy{
+  width: 25%
+}*/
+
+footer{
+  display: flex;
+  background-color:#C6d5c5;
+}
+
+img {
+  box-shadow: 2px 2px #02010a;
+  margin: 3% 5%  ;
+  width: 90%;
+}
+
+#contenido {
+  margin: auto;
+  width:900px;
+  display: flex;
+  flex-flow: row wrap;
 }
