@@ -5,21 +5,37 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-header {
+.cabezera {
+
   width: 100%;
-  display: flex;
-  flex-flow: row wrap;
   color: #fff;
   background-color:#5b7989;
   border-radius: 10px 10px  0 0 ;
 }
 
 header h1 {
+
+
   text-shadow: 2px  2px  2px  #02010a;
 }
 header ul li {
-margin: auto;
+
   display: inline-block;
+}
+ul li  a{
+
+    color: #fff;
+    text-decoration: none;
+
+}
+#title{
+
+  width: 50%;
+}
+ #main{
+
+width: 50%;
+
 }
 #img_central{
   width: 100%;
@@ -35,7 +51,7 @@ margin: auto;
   background-color: #d5c75f;
   text-align: center;
 }
-/*
+
 #contacto{
   width: 25%;
 }
@@ -47,17 +63,31 @@ margin: auto;
 }
 #copy{
   width: 25%
-}*/
+}
 
-footer{
+.footer{
+  border-radius: 0 0 10px 10px;
   display: flex;
   background-color:#C6d5c5;
 }
 
 img {
   box-shadow: 2px 2px #02010a;
-  margin: 3% 5%  ;
-  width: 90%;
+  width: 100%;
+}
+#img_secundari_1 img:hover{
+  box-shadow: 3px 2px   #82c3a6;
+  border: solid 2px #000;
+  transition: all 1s;
+  transform: rotate(10deg);
+  animation-direction: reverse;
+}
+#img_secundari_2 img:hover{
+  box-shadow: 3px 2px #82c3a6;
+  border: solid 2px #000;
+  transition: all 1s;
+  transform: translate(20px,-5px);
+  animation-direction: reverse;
 }
 
 #contenido {
@@ -65,4 +95,56 @@ img {
   width:900px;
   display: flex;
   flex-flow: row wrap;
+}
+
+
+
+@media screen and (max-width: 890px){
+
+#contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#title
+	{
+	width: 100%;
+	}
+	#main
+  {
+	width: 100%;
+	}
+	#img_central
+	{
+	width: 100%;
+	}
+  #img_secundari_1
+	{
+	width: 100%;
+	}
+  #img_secundari_2
+	{
+	width: 100%;
+	}
+  #contacto
+  {
+  width: 100%;
+  }
+  #termino
+  {
+  width: 100%;
+  }
+  #redes
+  {
+  width: 100%;
+  }
+  #copy
+  {
+  width: 100%;
+  }
+
+	header
+	{
+	width:100%;
+	}
 }
