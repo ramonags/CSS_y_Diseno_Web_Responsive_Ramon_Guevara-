@@ -1,42 +1,75 @@
+
+
 body {
-
-
+  margin: 0%;
   background-color:  #02010a;
   font-family: 'Dancing Script', cursive;
 }
-
-.cabezera {
-
-  width: 100%;
-  color: #fff;
+/*--------------------------------header----------------------------------*/
+header {
+  margin-top: 0%;
   background-color:#5b7989;
+  width: 100%;
+  top: 0;
   border-radius: 10px 10px  0 0 ;
+  animation: slide 2s;
+
 }
+.menu{
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .logo h1 {
 
-header h1 {
-
-
+  color: #fff;
+  vertical-align: top;
+  text-align: center;
   text-shadow: 2px  2px  2px  #02010a;
 }
-header ul li {
-
+.menu .enlaces {
   display: inline-block;
+  text-align: center;
 }
-ul li  a{
-
-    color: #fff;
-    text-decoration: none;
-
+ .menu .enlaces a {
+   color: #fff;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0.5em;
+   text-align: center;
+ }
+ /*------------------Imagenes--------------------------------------*/
+.cuerpo{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
-#title{
+ .cuerpo img {
+   box-shadow: 2px 2px 2px #02010a;
+   width: 100%;
+ }
+ figcaption a{
+   color: #000;
+   font-size: 1.3em;
+   font-weight: bold;
+ }
+ /*--------------------------galeria--------------------------*/
+ .galeria{
+   width: 100%;
+   background-color: #d5c75f;
+   display: flex;
 
-  width: 50%;
+ }
+.galeria figure {
+  width: 33%
 }
- #main{
 
-width: 50%;
 
-}
+/*-------------------cuerpo--------------------------------------------*/
 #img_central{
   width: 100%;
   background-color: #82c3a6;
@@ -65,25 +98,17 @@ width: 50%;
   width: 25%
 }
 
-.footer{
-  border-radius: 0 0 10px 10px;
-  display: flex;
-  background-color:#C6d5c5;
-}
+/*------------------------animaciones-----------------------------------------*/
 
-img {
-  box-shadow: 2px 2px #02010a;
-  width: 100%;
-}
 #img_secundari_1 img:hover{
-  box-shadow: 3px 2px   #82c3a6;
+  box-shadow: 3px 2px 3px  #82c3a6;
   border: solid 2px #000;
   transition: all 1s;
   transform: rotate(10deg);
   animation-direction: reverse;
 }
 #img_secundari_2 img:hover{
-  box-shadow: 3px 2px #82c3a6;
+  box-shadow: 3px 2px 3px #82c3a6;
   border: solid 2px #000;
   transition: all 1s;
   transform: translate(20px,-5px);
@@ -97,20 +122,51 @@ img {
   flex-flow: row wrap;
 }
 
+/*-----------------------footer------------------------------------------*/
+.footer {
+  background-color:#C6d5c5;
+  width: 100%;
+  top: 0;
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 1em;
+}
+.part
+{  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-weight: bold;
+
+}
+.part a i img {
+  width: 1em;
+}
+#redes a {
+  align-items: center;
+  padding: 0.4em;
+  color: #000;
+  display:block;
+  text-decoration: none ;
+
+}
+
+/*------------adactativo-------------------*/
 
 
-@media screen and (max-width: 890px){
+@media screen and (max-width: 899px){
 
 #contenido
 	{
 		width: 100%;
 		margin: 0 auto;
 	}
-	#title
+	.logo
 	{
 	width: 100%;
 	}
-	#main
+	.enlaces
   {
 	width: 100%;
 	}
@@ -130,7 +186,7 @@ img {
   {
   width: 100%;
   }
-  #termino
+  #terminos
   {
   width: 100%;
   }
@@ -147,4 +203,16 @@ img {
 	{
 	width:100%;
 	}
+}
+/*------------------------efectos ---------------------*/
+@-webkit-keyframes slide{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
