@@ -1,11 +1,11 @@
 
-
+/*--------------------------------header----------------------------------*/
 body {
-  margin: 0%;
+
   background-color:  #02010a;
   font-family: 'Dancing Script', cursive;
 }
-/*--------------------------------header----------------------------------*/
+
 header {
   margin-top: 0%;
   background-color:#5b7989;
@@ -14,6 +14,12 @@ header {
   border-radius: 10px 10px  0 0 ;
   animation: slide 2s;
 
+}
+#contenido {
+  margin: auto;
+  width:900px;
+  display: flex;
+  flex-flow: row wrap;
 }
 .menu{
   width: 90%;
@@ -25,7 +31,7 @@ header {
   align-items: center;
 }
 .menu .logo h1 {
-
+font-size: 4vh;
   color: #fff;
   vertical-align: top;
   text-align: center;
@@ -37,11 +43,15 @@ header {
 }
  .menu .enlaces a {
    color: #fff;
-   text-decoration: none;
+  font-size: 3vh;
    display: inline-block;
    padding: 0.5em;
    text-align: center;
  }
+ .subrayado{
+   text-decoration: none;
+ }
+
  /*------------------Imagenes--------------------------------------*/
 .cuerpo{
   width: 100%;
@@ -58,15 +68,45 @@ header {
    font-weight: bold;
  }
  /*--------------------------galeria--------------------------*/
- .galeria{
+ #galeria{
    width: 100%;
-   background-color: #d5c75f;
-   display: flex;
 
- }
-.galeria figure {
-  width: 33%
 }
+.container {
+width: 100%;
+background-color: #d5c75f;
+padding: 10px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+}
+
+.container div{
+width: 33.3%;
+}
+
+.elemento {
+width: 90%;
+display:block;
+margin:20px auto ;
+-webkit-box-shadow: 2px 2px 2px  #02010a ;
+box-shadow: 2px 2px 2px  #02010a ;
+}
+.elemento1 {
+  -webkit-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+}
+ .elemento2, .elemento4, .elemento6{
+   -webkit-filter: grayscale(100%);
+   -o-filter: grayscale(100%);
+   filter: grayscale(100%);
+ }
+ .elemento3 {
+   -webkit-filter: sepia(90%);
+   -o-filter: sepia(90%);
+   filter: sepia(90%);
+ }
 
 
 /*-------------------cuerpo--------------------------------------------*/
@@ -85,18 +125,10 @@ header {
   text-align: center;
 }
 
-#contacto{
+#contacto, #terminos, #redes, #copy{
   width: 25%;
 }
-#terminos{
-  width: 25%;
-}
-#redes{
-  width: 25%
-}
-#copy{
-  width: 25%
-}
+
 
 /*------------------------animaciones-----------------------------------------*/
 
@@ -114,14 +146,6 @@ header {
   transform: translate(20px,-5px);
   animation-direction: reverse;
 }
-
-#contenido {
-  margin: auto;
-  width:900px;
-  display: flex;
-  flex-flow: row wrap;
-}
-
 /*-----------------------footer------------------------------------------*/
 .footer {
   background-color:#C6d5c5;
@@ -136,7 +160,7 @@ header {
   margin: auto;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: bold;
 
 }
@@ -149,18 +173,18 @@ header {
   color: #000;
   display:block;
   text-decoration: none ;
-
 }
-
 /*------------adactativo-------------------*/
-
-
 @media screen and (max-width: 899px){
 
 #contenido
 	{
 		width: 100%;
 		margin: 0 auto;
+	}
+  header
+	{
+	width:100%;
 	}
 	.logo
 	{
@@ -198,13 +222,12 @@ header {
   {
   width: 100%;
   }
-
-	header
-	{
-	width:100%;
-	}
+  .container div
+  {
+    width: 100%;
+  }
 }
-/*------------------------efectos ---------------------*/
+/*------------------------efectos todo la pagina slide ---------------------*/
 @-webkit-keyframes slide{
   0%{
     margin-top: 150%;
